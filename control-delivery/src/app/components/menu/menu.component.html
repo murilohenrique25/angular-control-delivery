@@ -1,0 +1,39 @@
+<nav class="sidemenu">
+  <ul>
+
+    <!-- LOGO -->
+    <li routerLink="/home" class="logo-area">
+      <img title="Logo " src="../../../assets/logo.png" width="42px" />
+      <span class="logo">EntregaJá</span>
+    </li>
+
+    <!-- OPERAÇÃO -->
+    <li class="menu-title">📦 OPERAÇÃO</li>
+    <li routerLink="/home"><mat-icon>dashboard</mat-icon>Dashboard</li>
+    <li routerLink="/inserir-entrega"><mat-icon>add_shopping_cart</mat-icon>Inserir Entrega</li>
+    <li routerLink="/entregas"><mat-icon>list_alt</mat-icon>Entregas</li>
+    <li routerLink="/assinar-entregas"><mat-icon>edit_square</mat-icon>Assinar Entregas</li>
+
+    <!-- PESSOAS -->
+    <li class="menu-title">👥 PESSOAS</li>
+    <li routerLink="/usuario"><mat-icon>person_add</mat-icon>Vendedores</li>
+    <li routerLink="/entregador"><mat-icon>motorcycle</mat-icon>Entregadores</li>
+
+    <!-- ADMIN -->
+    <li class="menu-title">⚙️ ADMINISTRAÇÃO</li>
+    <li routerLink="/matriz"><mat-icon>apartment</mat-icon>Matriz</li>
+    <li routerLink="/servicos"><mat-icon>folder_open</mat-icon>Serviços</li>
+    <li routerLink="/forma-pagamento"><mat-icon>payments</mat-icon>Formas de Pagamento</li>
+    <li routerLink="/mapa-entrega"><mat-icon>add_location</mat-icon>Mapa de Entregas</li>
+
+    <!-- GESTÃO -->
+    <li class="menu-title">📊 GESTÃO</li>
+    <li routerLink="/relatorios"><mat-icon>bar_chart</mat-icon>Relatórios</li>
+
+    <!-- LOGOUT -->
+    <li class="logout" (click)="logout()">
+      <mat-icon>logout</mat-icon>Sair
+    </li>
+
+  </ul>
+</nav>

@@ -1,0 +1,61 @@
+.sidemenu {
+    width: 220px;
+
+    min-height: 100vh;
+    display: block;
+    float: left;
+    background: linear-gradient(180deg, #5b21b6, #6c2bd9);
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .logo-area {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-title {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 16px 20px 6px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    li {
+        color: #fff;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        transition: 0.25s;
+        border-radius: 10px;
+        margin: 4px 10px;
+
+        mat-icon {
+            font-size: 22px;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+    }
+
+    .logout {
+        margin-top: auto;
+        background: rgba(255, 0, 0, 0.1);
+        color: #ffb4b4;
+    }
+}
